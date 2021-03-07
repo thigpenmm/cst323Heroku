@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {font-family: Calibri, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+.container {
+	width: 500px;
+	height: 450px;
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(44, 62, 80,0.7);
+	margin-top: 160px;
+}
+input[type="text"],input[type="password"]{
+  width: 300px;
+  padding: 15px;
+  margin: 30px 0 20px 0;
+  display: inline-block;
+  border: none;
+  background: lightCyan;
+}
+ 
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+ 
+.form-input:nth-child(2)::before{
+	content: "\f023";
+}
+ 
+.btn-login{
+  background-color: darkCyan;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+</style>
+
+<title> Login </title>
+</head>
+<body>
+<div class="container">
+<form method="POST" action = "login.php">
+<div class="form-input">
+<h1 style="color:white;"> <br> Sign In</h1>
+<input type="text" name="username" placeholder="Enter your Username"/>
+</div>
+<div class="form-input">
+<input type="password" name="password" placeholder="Enter your Password"/>
+</div>
+<input type="submit" type="submit" value="LOGIN" class="btn-login"/>
+</form>
+</div>
+</body>
+</html>
